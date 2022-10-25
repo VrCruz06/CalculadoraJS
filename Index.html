@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+    <head lang="en">
+        <title>Calculator</title>
+        <meta charset="UTF-8">
+        <meta name= "viewport" content = "width-device-width, initial scale=1">  
+        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="reset.css">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Barlow:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200" />
+    </head>
+
+    <body>
+
+        <div class="base_calculadora">
+            <div class="visor_calculadora">
+                <p class="visor" id="resultado"></p>                
+            </div>
+
+            <div class="teclado_calculadora" style="padding-top: 20px; padding-left: 5px;">
+                <section class="secao_calculadora">
+                 <button class="botão botao_calculadora" onclick=AoQuadrado()>x²</button>
+                 <button class="botão botao_calculadora" onclick=clean()><span class="material-symbols-outlined">
+                    delete_forever
+                    </span></button>
+                 <button class="botão botao_calculadora" onclick=back()><span class="material-symbols-outlined">
+                    undo
+                    </span></button>
+                 <button class="botão botao_calculadora" onclick="insert('/')">/</button>
+                </section>
+
+                <section class="secao_calculadora">
+                <button class="botão botao_calculadora" onclick="insert('1')">1</button>
+                <button class="botão botao_calculadora" onclick="insert('2')">2</button>
+                <button class="botão botao_calculadora" onclick="insert('3')">3</button>
+                <button class="botão botao_calculadora" onclick="insert('*')">X</button>
+                </section>
+
+                <section class="secao_calculadora">
+                 <button class="botão botao_calculadora" onclick="insert('4')">4</button>
+                 <button class="botão botao_calculadora" onclick="insert('5')">5</button>
+                 <button class="botão botao_calculadora" onclick="insert('6')">6</button>
+                 <button class="botão botao_calculadora" onclick="insert('+')">+</button>
+                </section>
+
+                <section class="secao_calculadora">
+                 <button class="botão botao_calculadora" onclick="insert('7')">7</button>
+                 <button class="botão botao_calculadora" onclick="insert('8')">8</button>
+                 <button class="botão botao_calculadora" onclick="insert('9')">9</button>
+                 <button class="botão botao_calculadora" onclick="insert('-')">-</button>
+                </section>
+
+                <section class="secao_calculadora">
+                <button class="botão botao_calculadora" onclick="insert(',')">,</button>
+                <button class="botão botao_calculadora" onclick="insert('0')">0</button>
+                <button class="botão botao_calculadora" id="enviar" onclick=calcular() style="width: 110px; background-color: blue;">=</button>
+                </section>
+            </div>
+        </div>
+        <script src="./Script.js"></script>
+        <h1 class="Dev">Created by Victor Rian :)</h1>
+    </body>
+</html>
